@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+
+<html lang="pt-br">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Conversor de Moeda</title>  
+  <link rel="stylesheet" href="./src/style/style.css">  
+</head>  
+<body>  
+  <main>  
+    <header>  
+      <h1>Conversor de Moeda</h1>  
+    </header>  
+    <form id="form-conversor">  
+      <!-- valor que a pessoa tem -->  
+      <label class="form-label" for="input-value">Quanto você tem?</label>  
+      <input type="number" class="input-value" name="input-value" placeholder="700" required>  <!-- moeda de origem -->  
+  <label for="moeda-origem">De:</label>  
+  <select id="moeda-origem" required>  
+    <option value="" selected>Selecione a moeda de origem</option>  
+    <option value="BRL">Real Brasileiro (BRL)</option>  
+    <option value="USD">Dólar Americano (USD)</option>  
+    <option value="EUR">Euro (EUR)</option>  
+    <option value="JPY">Iene Japonês (JPY)</option>  
+    <option value="GBP">Libra Esterlina (GBP)</option>  
+  </select>  
+
+  <!-- moeda de destino -->  
+  <label for="moeda-destino">Para:</label>  
+  <select id="moeda-destino" required>  
+    <option value="" selected>Selecione a moeda de destino</option>  
+    <option value="BRL">Real Brasileiro (BRL)</option>  
+    <option value="USD">Dólar Americano (USD)</option>  
+    <option value="EUR">Euro (EUR)</option>  
+    <option value="JPY">Iene Japonês (JPY)</option>  
+    <option value="GBP">Libra Esterlina (GBP)</option>  
+  </select>  
+
+  <button class="btn-default" type="submit">Converter</button>  
+
+  <!-- resultado -->  
+  <label for="Div-value">Valor convertido:</label>  
+  <div class="Div-value" id="Div-value"></div>  
+</form>
+
+  </main>  
+  <script src="./src/javascript/script.js"></script>  
+</body>  
+</html>

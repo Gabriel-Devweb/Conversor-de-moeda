@@ -1,0 +1,97 @@
+/* Importando a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo da página */
+body {
+  background-color: #f2f8f5; /* verde bem suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+main {
+  background: #ffffff; /* fundo branco */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título */
+header h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e7d32; /* verde forte */
+  font-weight: 600;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs e selects */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #c8e6c9; /* verde clarinho */
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* Botão */
+.btn-default {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #4caf50; /* verde médio */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-default:hover {
+  background-color: #388e3c; /* verde mais escuro */
+}
+
+/* Div do resultado */
+.Div-value {
+  width: 100%;
+  padding: 0.9rem;
+  background: #e8f5e9; /* verde bem clarinho */
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1b5e20; /* verde escuro */
+  margin-top: 0.5rem;
+}
